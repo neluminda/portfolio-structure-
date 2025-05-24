@@ -1,0 +1,45 @@
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Tailwind colors */
+:root {
+    --color-primary-base: #20B2AA; /* Light Sea Green */
+    --color-primary-analogous-1: #6495ED; /* Cornflower Blue */
+    --color-primary-analogous-2: #9ACD32; /* YellowGreen */
+    --color-accent: #FF7F50; /* Coral */
+    --color-neutral-light: #F8F8F8;
+    --color-neutral-dark: #333333;
+}
+
+.bg-primary-base { background-color: var(--color-primary-base); }
+.text-primary-base { color: var(--color-primary-base); }
+.hover\:bg-primary-base:hover { background-color: var(--color-primary-base); }
+
+.bg-primary-analogous-1 { background-color: var(--color-primary-analogous-1); }
+.text-primary-analogous-1 { color: var(--color-primary-analogous-1); }
+.hover\:bg-primary-analogous-1:hover { background-color: var(--color-primary-analogous-1); }
+
+.bg-primary-analogous-2 { background-color: var(--color-primary-analogous-2); }
+.text-primary-analogous-2 { color: var(--color-primary-analogous-2); }
+.hover\:bg-primary-analogous-2:hover { background-color: var(--color-primary-analogous-2); }
+
+.bg-accent { background-color: var(--color-accent); }
+.text-accent { color: var(--color-accent); }
+.hover\:bg-accent:hover { background-color: var(--color-accent); }
+
+.bg-neutral-light { background-color: var(--color-neutral-light); }
+.text-neutral-light { color: var(--color-neutral-light); }
+
+.bg-neutral-dark { background-color: var(--color-neutral-dark); }
+.text-neutral-dark { color: var(--color-neutral-dark); }
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

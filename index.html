@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Bloom | Abstract Alchemist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-neutral-light text-neutral-dark">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-base rounded-lg p-2 hover:text-primary-analogous-1 transition duration-300">Luna Bloom</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-lg text-neutral-dark hover:text-primary-analogous-1 transition duration-300 rounded-md p-2">Home</a>
+                <a href="#about" class="text-lg text-neutral-dark hover:text-primary-analogous-1 transition duration-300 rounded-md p-2">About</a>
+                <a href="#portfolio" class="text-lg text-neutral-dark hover:text-primary-analogous-1 transition duration-300 rounded-md p-2">Portfolio</a>
+                <a href="#contact" class="text-lg text-neutral-dark hover:text-primary-analogous-1 transition duration-300 rounded-md p-2">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neutral-dark focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 shadow-lg">
+            <a href="#hero" class="block px-6 py-2 text-lg text-neutral-dark hover:bg-primary-analogous-1 hover:text-white transition duration-300">Home</a>
+            <a href="#about" class="block px-6 py-2 text-lg text-neutral-dark hover:bg-primary-analogous-1 hover:text-white transition duration-300">About</a>
+            <a href="#portfolio" class="block px-6 py-2 text-lg text-neutral-dark hover:bg-primary-analogous-1 hover:text-white transition duration-300">Portfolio</a>
+            <a href="#contact" class="block px-6 py-2 text-lg text-neutral-dark hover:bg-primary-analogous-1 hover:text-white transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/20B2AA/FFFFFF?text=Abstract+Art+Background');">
+                <div class="absolute inset-0 bg-primary-base opacity-70"></div>
+            </div>
+            <div class="relative z-10 p-8 rounded-lg max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 drop-shadow-lg">
+                    Luna Bloom: Where Colors Transcend Canvas
+                </h1>
+                <p class="text-xl md:text-2xl text-neutral-light mb-8 drop-shadow-md">
+                    Crafting vibrant narratives through abstract expression.
+                </p>
+                <a href="#portfolio" class="bg-accent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                    Explore My Creations
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-4xl font-bold text-primary-analogous-1 mb-8">About Luna Bloom</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://placehold.co/300x300/6495ED/FFFFFF?text=Luna+Bloom" alt="Luna Bloom" class="rounded-full shadow-lg mx-auto w-48 h-48 object-cover border-4 border-primary-analogous-2">
+                    </div>
+                    <div class="md:w-2/3 text-lg leading-relaxed text-neutral-dark text-left">
+                        <p class="mb-4">
+                            Hello! I'm Luna Bloom, an abstract alchemist who believes art is a conversation between the soul and the canvas. My journey began with an insatiable curiosity for color and form, leading me to explore the depths of abstract expressionism. I'm fascinated by how colors interact, evoke emotions, and tell stories without a single recognizable shape.
+                        </p>
+                        <p class="mb-4">
+                            My work is a vibrant exploration of emotion, nature, and the unseen energies that connect us. Each piece is an experiment, a dance of pigments and textures, inviting viewers to find their own meaning within the swirls and strokes. I aim to create art that resonates, sparks joy, and encourages a moment of introspection.
+                        </p>
+                        <p>
+                            When I'm not in my studio, you can find me exploring botanical gardens for color inspiration or experimenting with new mediums. Thank you for visiting my space!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-16 bg-neutral-light">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-primary-analogous-2 mb-12">My Abstract Creations</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/9ACD32/FFFFFF?text=Cosmic+Dance" alt="Cosmic Dance" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Cosmic Dance</h3>
+                            <p class="text-neutral-dark text-sm">A vibrant exploration of celestial movements and energetic forms.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/FF7F50/FFFFFF?text=Emotional+Tides" alt="Emotional Tides" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Emotional Tides</h3>
+                            <p class="text-neutral-dark text-sm">Capturing the ebb and flow of human emotions through color gradients.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/20B2AA/FFFFFF?text=Forest+Whispers" alt="Forest Whispers" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Forest Whispers</h3>
+                            <p class="text-neutral-dark text-sm">Inspired by the serene and mysterious depths of ancient forests.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/6495ED/FFFFFF?text=Urban+Rhythms" alt="Urban Rhythms" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Urban Rhythms</h3>
+                            <p class="text-neutral-dark text-sm">A dynamic portrayal of city life's energy and contrasts.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/ADFF2F/FFFFFF?text=Desert+Dreamscape" alt="Desert Dreamscape" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Desert Dreamscape</h3>
+                            <p class="text-neutral-dark text-sm">Evoking the vastness and subtle beauty of desert landscapes.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/F8F8F8/333333?text=Celestial+Bloom" alt="Celestial Bloom" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-primary-base mb-2">Celestial Bloom</h3>
+                            <p class="text-neutral-dark text-sm">A delicate balance of cosmic elements and organic growth.</p>
+                            <button class="mt-4 bg-primary-analogous-1 text-white py-2 px-4 rounded-full hover:bg-primary-base transition duration-300">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-primary-base text-white">
+            <div class="container mx-auto px-6 text-center max-w-2xl">
+                <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+                <p class="text-lg mb-8">
+                    Have a question, commission request, or just want to say hello? I'd love to hear from you!
+                </p>
+                <form class="bg-white p-8 rounded-lg shadow-xl text-neutral-dark">
+                    <div class="mb-6">
+                        <label for="name" class="block text-left text-lg font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-analogous-1" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-left text-lg font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-analogous-1" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-left text-lg font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-analogous-1" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="bg-accent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-neutral-dark text-neutral-light py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Luna Bloom. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-neutral-light hover:text-primary-analogous-1 transition duration-300">Facebook</a>
+                <a href="#" class="text-neutral-light hover:text-primary-analogous-1 transition duration-300">Instagram</a>
+                <a href="#" class="text-neutral-light hover:text-primary-analogous-1 transition duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
